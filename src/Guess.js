@@ -1,6 +1,5 @@
 function Guess(answer,compare){
 	this.answer_generator = answer;
-	this.answer = answer.random();
 	this.compare =compare;
 }
 
