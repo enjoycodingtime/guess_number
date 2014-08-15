@@ -1,4 +1,4 @@
-beforeEach(function () {
+eforeEach(function () {
   jasmine.addMatchers({
     toBePlaying: function () {
       return {

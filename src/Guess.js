@@ -1,4 +1,5 @@
 function Guess(answer,compare){
+	this.answer_generator = answer;
 	this.answer = answer.random();
 	this.compare =compare;
 }
@@ -6,3 +7,7 @@ function Guess(answer,compare){
 Guess.prototype.guess_number = function(input_number){
     return this.compare.compare(this.answer, input_number);
 };
+
+Guess.prototype.start = function(){
+	this.answer = this.answer_generator.random();
+}
